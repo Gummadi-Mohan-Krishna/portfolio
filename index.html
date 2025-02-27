@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION-GMK</title>
+    <style>
+        body {
+            cursor: pointer;
+            text-align: center;
+            padding: 236px;
+            padding-top: 80px;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text1 {
+            font-weight: 700;
+            font-size: 19px;
+            width: 28ch;
+            border-right-color: transparent;
+            animation: t-typing 3s steps(30) forwards;
+            overflow: hidden;
+            white-space: nowrap;
+            animation-delay: 2s;
+            opacity: 0;
+        }
+        .text2 {
+            font-weight: 600;
+            font-size: 17px;
+            width: 83ch;
+            border-right-color: transparent;
+            animation: t-typing 7s steps(93) forwards;
+            overflow: hidden;
+            white-space: nowrap;
+            padding-bottom: 3px;
+            animation-delay: 5s;
+            opacity: 0;
+            margin-bottom: 0;
+        }
+        .text3 {
+            font-weight: 600;
+            font-size: 17px;
+            width: 83ch;
+            border-right-color: transparent;
+            animation: t-typing 7s steps(93) forwards;
+            overflow: hidden;
+            white-space: nowrap;
+            padding-bottom: 3px;
+            animation-delay: 9s;
+            opacity: 0;
+            margin-top: 0;
+        }
+        .text4{
+            opacity: 0;
+            font-size: 13px;
+            width: 1000px;
+            animation: opc 2s forwards;
+            animation-delay: 13s;
+        }
+        @keyframes opc{
+            100%{
+                opacity: 1;
+            }
+        }
+
+        @keyframes t-typing {
+            0% {
+                opacity: 1;
+                width: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+            opacity: 0;
+            filter: brightness(1.5);
+            filter: contrast(1.3);
+            margin: 10px;
+            animation: imgOpc 3s forwards;
+            animation-delay: 0.5s;
+            transition: opacity 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        @keyframes imgOpc {
+            0% {
+                opacity: 0;
+                box-shadow: 1px 1px 10px 10px transparent;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+                box-shadow: 1px 1px 10px 10px grey;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <img src="me.jpg" alt="">
+        </div>
+        <div>
+            <p class="text1">Hey!!! This is G.Mohan Krishna</p>
+        </div>
+        <div>
+            <p class="text2">I'm glad you took the time to 
+                check out my portfolio.</p>
+        </div>
+        <div>
+            <p class="text3">I hope you
+                find it engaging and worthwhile.</p>
+        </div>
+        <div>
+            <p class="text4">Click or tap anywhere to explore the portfolio.</p>
+        </div>
+    </div>
+    <script>
+        document.body.addEventListener("click", () => {
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+
+</html>

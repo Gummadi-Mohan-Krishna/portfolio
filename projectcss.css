@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-align: center;
+}
+body{
+    opacity: 0;
+    animation: opacity 5s forwards;
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+svg{
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-container1{
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px 2px grey;
+    padding: 7px;
+    margin: 5px;
+}
+.sub-container2{
+    width: 95%;
+    border: 2px solid black;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px 2px grey;
+    padding: 7px;
+    margin: 5px;
+}
+.cen-box{
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 10px;
+    animation: common  2s forwards; 
+    animation-delay: 7s;
+    opacity: 0;
+    margin: 7px;
+    box-shadow: 1px 1px 1px 2px grey;
+}
+.cen-box:hover{
+    box-shadow: 1px 1px 2px 3px grey;
+}
+img{
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px 2px grey;
+    margin: 5px;
+    animation: common  2s forwards; 
+    animation-delay: 7s;   
+    opacity: 0;
+    image-rendering: -webkit-optimize-contrast;
+    filter: brightness(1) contrast(1.1) saturate(1.1);
+    image-rendering: crisp-edges;
+}
+.heading{
+    font-weight: 700;
+    font-size: 20px;
+    width: 18ch;
+    border-right-color:transparent;
+    animation: h-typing 3s steps(17);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 7px;
+}
+@keyframes h-typing {
+    from {
+        width: 0;
+    }   
+}
+.title{
+    font-weight: 700;
+    font-size: 17px;
+    width:28.5ch;
+    border-right-color:transparent;
+    animation: t-typing 3s steps(28) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-delay: 3s;
+    opacity: 0;
+    padding-bottom: 3px;
+}
+@keyframes t-typing {
+    0% {
+        opacity: 1;
+        width: 0.005%;
+    }
+    100%{
+        opacity: 1;
+    }   
+}
+.side-heading{
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 15px;
+    animation: common  2s forwards; 
+    animation-delay: 6s;
+    opacity: 0;
+    padding: 1px;
+}
+.content{
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 15px;
+    animation: common  2s forwards; 
+    animation-delay: 7s;
+    opacity: 0;
+}
+@keyframes common{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.text-container {
+    height: 50px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 42px;
+    margin-bottom: 35px;
+    padding: 5px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-size: 2rem;
+    position: relative; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    animation: opc 5s forwards;
+}
+@keyframes opc{
+    0%{
+        box-shadow: 1px 1px 2px 3px transparent;
+    }
+    100%{
+        box-shadow: 1px 1px 2px 3px gray;
+    }
+}
+.text {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0; 
+    opacity: 0;
+}
+
+#text1 {
+    animation: fadeInOut1 8s forwards; 
+}
+
+#text2 {
+    animation: fadeInOut2 5s forwards;
+    animation-delay:8s ;
+}
+#text3 {
+    animation: fadeInOut3 5s forwards;
+    animation-delay:13s ;
+}
+@keyframes fadeInOut1 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0; 
+    }
+}
+
+@keyframes fadeInOut2 {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1; 
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fadeInOut3 {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+.tag{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    gap: 5px;
+}
+.btn {
+    height: 30px;
+    width: 65px;
+    top: 10px;
+    right: 10px; 
+    text-align: center; 
+    border-radius: 5px;
+    cursor: pointer; 
+    color: black;
+    border: 2px solid black;
+    padding: 1px;
+    box-shadow: 1px 1px 1px 2px grey;
+    animation: opacity 2s forwards;
+}
+.btn:hover{
+    box-shadow: 1px 1px 2px 3px grey; 
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
