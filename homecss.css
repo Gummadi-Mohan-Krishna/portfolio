@@ -128,20 +128,7 @@ body {
         transform: rotate(855deg);
     }
 }
+
 .boxes:hover{
     box-shadow: 2px 1px 10px 5px grey;    
-}
-a {
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
 }
