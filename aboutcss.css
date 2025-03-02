@@ -23,7 +23,7 @@
 .tag{
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     top: 1%;
     right: 1%;
     gap: 7px;
