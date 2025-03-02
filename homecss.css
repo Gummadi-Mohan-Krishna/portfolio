@@ -16,7 +16,6 @@ body {
         opacity: 1;
     }
 }
-
 .container{
     display: flex;
     justify-content: center;
@@ -52,18 +51,24 @@ body {
     padding-top: 17px;
     flex-shrink: 0;
 }
-.top-boxes, .bottom-boxes {
+.top-boxes{
     display: flex;
     justify-content: center; 
     height: 38.5%;
     width: 100%; 
     gap: 15%;
-}
-.top-boxes{
+    align-items: center;
+    padding-bottom: 0;
     margin-top: 2.5%;
 }
-.bottom-boxes{
+.bottom-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 38.5%;
+    width: 100%; 
     margin-bottom: 5%;
+    gap: 15%;
 }
 .box1 {
     top: 0;
