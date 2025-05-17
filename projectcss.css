@@ -61,6 +61,7 @@ svg{
     right: 46.7%;
     margin: 7px;
     box-shadow: 1px 1px 1px 2px grey;
+    margin-botton:1px;
 }
 .cen-box:hover{
     box-shadow: 1px 1px 2px 3px grey;
