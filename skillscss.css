@@ -10,7 +10,7 @@ body {
     animation: opacity 5s forwards;
 }
 
-@keyframes opacity {
+@keyframes opacity { 
     from {
         opacity: 0;
     }
