@@ -7,7 +7,7 @@
 
 body {
     opacity: 0;
-    animation: opacity 5s forwards;
+    animation: opacity 5s forwards; 
 }
 
 @keyframes opacity {
